@@ -22,14 +22,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
 }
-section {
-    margin-bottom: 20px;
-}
 
-h2 {
-    color: #363636;
-    text-align: justify;
-}
+
 
 ul {
     list-style-type: none;
