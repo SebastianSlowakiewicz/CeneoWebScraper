@@ -1,10 +1,44 @@
+h1 {
+    text-align: center;
+    position: relative;
+}
 h2 {
     text-align: center;
-    margin: auto;
+    position: relative;
+}
+h3 {
+    text-align: left;
+    position: relative;
+  left: 50px;
 }
 h7 {
     text-align: justify;
-    margin: auto;
-    margin-top: auto;
-    margin-bottom: auto;
+    position: relative;
+  left: 50px;
+  right: 50px;
+
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+section {
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #363636;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+div {
+    text-align: center;
+}
+a {
+    text-align: center;
 }

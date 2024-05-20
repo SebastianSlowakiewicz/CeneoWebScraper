@@ -8,12 +8,12 @@ def index():
 def extract():
     return render_template('extract.html.jinja')
 @app.route('/products')
-def extract():
+def products():
     return render_template('products.html.jinja')
 @app.route('/about')
-def extract():
+def about():
     return render_template('about.html.jinja')
 @app.route('/product/product_id')
-def extract():
+def product():
     return render_template('product.html.jinja')
 

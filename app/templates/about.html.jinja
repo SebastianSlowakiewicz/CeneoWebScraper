@@ -1,1 +1,89 @@
-{% extends "base.html.jinja" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title><h1>Ceneo Web Scraper</h1></title>
+</head>
+<body>
+  <header class="container">
+    <h1 class="text-center container">Ceneo Web Scraper</p></h1>
+    </header>
+<menu><nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{{url_for('index')}}"><i class="bi bi-house-door-fill"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="{{url_for('extract')}}">Ekstrakcja opinii</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('product')}}">Lista produktów</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{url_for('about')}}">O autorze</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true"></a>
+          </li>
+        </ul>
+      </div>
+    </div></menu>
+<section>
+        <h1>Sebastian Słowakiewicz</h1>
+    <section>
+        <h3>Wykształcenie:</h3>
+        <h7>
+            <li>Zespół Szkół Ekonomicznych w Nowym Targu</li>
+            <li>Technik Ekonomista</li>
+            <li>2019-2023</li>
+        </h7>
+        <h7>
+            <li>Akademia Nauk Stosowanych w Nowym Targu</li>
+            <li>Student na kierunku informatyka ekonomiczna</li>
+            <li>2023-</li>
+        </h7>
+    </section>
+
+    <section>
+        <h3>Kursy:</h3>
+        <h7>
+            <li>"Podstawy Rachunkowości Finansowej" Kurs obejmujący zasady i procedury rachunkowości finansowej</li>
+            <li>Data ukńczenia: 2022</li>
+        </h7>
+        <h7>
+            <li>"Zaawansowany Excel dla Księgowych" Kurs skupiający się na zaawansowanych funkcjach programu Excel przydatnych w pracy księgowego</li>
+            <li>Data ukńczenia: 2023</li>
+        </h7>
+        <h7>
+            <li>"Egzamin zawodowy EKA.04 - Prowadzenie dokumentacji w jednostce organizacyjnej</li>
+            <li>Data ukńczenia: 2022</li>
+        </h7>
+        <h7>
+            <li>"Egzamin zawodowy EKA.05 - Prowadzenie spraw kadrowo-płacowych i gospodarki finansowej jednostek organizacyjnych</li>
+            <li>Data ukńczenia: 2023</li>
+        </h7>
+    </section>
+
+    <section>
+        <h3>Doświadczenie Zawodowe:</h3>
+        <h7>
+        <li>Biuro księgowe "VATax"</li>
+            <li>stanowisko: asystent księgowego</li>
+            <li>2021-2023</li>
+        </h7>
+    </section>
+</section>
+
+ <footer class="container fixed-bottom alert alert-success text-end">
+  (c) Sebastian Słowakiewicz | Akademia nauk stosowanych w Nowym Targu
+</footer>
+
+</body>
+</html>
