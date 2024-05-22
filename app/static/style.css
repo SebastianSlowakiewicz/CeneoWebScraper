@@ -9,12 +9,12 @@ h2 {
 h3 {
     text-align: left;
     position: relative;
-  left: 50px;
+  left: 0px;
 }
 h7 {
     text-align: justify;
     position: relative;
-  left: 50px;
+  left: 0;
   right: 50px;
 
 }
