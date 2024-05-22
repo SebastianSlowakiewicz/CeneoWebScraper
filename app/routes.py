@@ -13,6 +13,7 @@ def extract():
         #walidacja
         url = f"https://www.ceneo.pl/{product_id}"
         response = requests.get(url)
+        print(product_id)
         if response.status_code == requests.codes['ok']:
             page = BeautifulSoup(response.text, "html.parser")
             opinions_count = page.select_one("a.product-review__link > span")
