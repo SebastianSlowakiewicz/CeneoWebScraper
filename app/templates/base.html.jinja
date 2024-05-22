@@ -35,8 +35,10 @@
         </ul>
       </div>
     </div></menu>
-<section>
-<h3>Cel aplikacji:</h3>
+<section class="container">
+  <div class="row">
+  {%block content%}
+  <p><h3>Cel aplikacji:</h3>
 <h7> Aplikacja Ceneo Web Scraper została stworzona w celu automatycznego pobierania danych z popularnej platformy zakupowej Ceneo.pl. Jej głównym celem jest umożliwienie użytkownikom szybkiego i skutecznego pozyskiwania informacji o produktach, takich jak ceny, opinie, oceny oraz inne parametry, w celu analizy rynku lub porównania ofert.</h7>
  
   
@@ -50,6 +52,8 @@
   
 <h3>Zastosowane podejścia:</h3>
  <h7>Aplikacja Ceneo Web Scraper opiera się głównie na technikach web scrapingu, które polegają na automatycznym przeszukiwaniu i ekstrakcji danych z witryn internetowych. W tym celu aplikacja wysyła zapytania HTTP do serwerów Ceneo.pl, a następnie analizuje odpowiedzi HTML, wydobywając z nich interesujące informacje. Podejście to umożliwia szybkie i skuteczne pozyskiwanie danych z platformy Ceneo.pl bez konieczności ręcznego przeglądania jej stron. Dodatkowo, aplikacja może wykorzystywać techniki przetwarzania języka naturalnego (NLP) do analizy opinii użytkowników i wyodrębniania istotnych informacji.</h7>
+ </section></p>
+  {%endblock content%}
  </section>
 
  <footer class="container fixed-bottom alert alert-success text-end">
