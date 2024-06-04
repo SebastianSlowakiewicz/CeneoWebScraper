@@ -1,6 +1,36 @@
 {% extends "base.html.jinja" %}
+
 {% block content%}
-<p> To jest strona lista produktów.</p>
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <ul id="product-list">
+            <ul id="product-list">
+                <li>
+                  <p><a href="#product-1" class="link-success link-offset-2 link-opacity-25 link-opacity-100-hover"><h4>Produkt 1</h4></a></p>
+                  <p>Liczba opinii: <span id="opinions-count-1">0</span></p>
+                  <p>Liczba wad: <span id="faults-count-1">0</span></p>
+                  <p>Liczba zalet: <span id="advantages-count-1">0</span></p>
+                  <p>Średnia ocena: <span id="average-rating-1">0</span></p>
+                  <button class="btn btn-dark" data-product-id="1" data-file-type="csv">Pobierz jako CSV</button>
+                  <button class="btn btn-dark" data-product-id="1" data-file-type="xlsx">Pobierz jako XLSX</button>
+                  <button class="btn btn-dark" data-product-id="1" data-file-type="json">Pobierz jako JSON</button>
+                </li>
+                <p><a href="#product-2" class="link-success link-offset-2 link-opacity-25 link-opacity-100-hover"><h4>Produkt 2</h4></a></p>
+                  <p>Liczba opinii: <span id="opinions-count-2">0</span></p>
+                  <p>Liczba wad: <span id="faults-count-2">0</span></p>
+                  <p>Liczba zalet: <span id="advantages-count-2">0</span></p>
+                  <p>Średnia ocena: <span id="average-rating-2">0</span></p>
+                  <button class="btn btn-dark" data-product-id="2" data-file-type="csv">Pobierz jako CSV</button>
+                  <button class="btn btn-dark" data-product-id="2" data-file-type="xlsx">Pobierz jako XLSX</button>
+                  <button class="btn btn-dark" data-product-id="2" data-file-type="json">Pobierz jako JSON</button>
+                <li>
+                </li>
+              </ul>
+        </ul>
+      </div>
+    </div>
+  </div>
 {% endblock content%}
 {% block title%}
 Lista produktów

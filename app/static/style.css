@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 h1 {
     text-align: center;
     position: relative;
@@ -11,7 +13,7 @@ h3 {
     position: relative;
   left: 0px;
 }
-h7 {
+h6 {
     text-align: justify;
     position: relative;
   left: 0;
@@ -35,4 +37,45 @@ div {
 }
 a {
     text-align: center;
+}
+#product-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  #product-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  #product-list li:last-child {
+    border-bottom: none;
+  }
+  #product-list li h4 a {
+    text-decoration: none;
+    color: #337ab7;
+  }
+  #product-list li h4 a:hover {
+    color: #23527c;
+  }
+  #product-list li button {
+    margin: 5px;
+  }
+  #opinions-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  #opinions-table th, #opinions-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+  }
+  #opinions-table th {
+    background-color: #f0f0f0;
+  }
+  #opinions-table td:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  css
+canvas {
+  max-width: 100%;
 }

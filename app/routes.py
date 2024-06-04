@@ -33,4 +33,7 @@ def about():
 @app.route('/product/product_id')
 def product():
     return render_template('product.html.jinja')
+@app.route('/product/product_id/charts')
+def charts():
+    return render_template('charts.html.jinja')
 
